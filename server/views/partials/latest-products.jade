@@ -1,0 +1,42 @@
+<!--latest products-->
+div(class="latest-products spacer")
+    div(class="container")
+        h2 Latest Products
+        div(id="owl-products",class="owl-carousel owl-theme owl-loaded owl-responsive-992")
+            div(class="owl-stage-outer")
+                div(class="owl-stage",style="transform: translate3d(-922.5px, 0px, 0px); transition: 0.25s; width: 2152.5px;")
+                    div(class="owl-item",style="width: 277.5px; margin-right: 30px;",ng-repeat="product in latestProducts")
+                        div(class="product")
+                            a(href="#")
+                                img(src="{{product.src}}",class="img-responsive")
+                            h4
+                                a(href="#") {{product.title}}
+                            div(class="details")
+                                span
+                                    b Price
+                                    | {{product.Currency}}. {{product.Price}}
+                                span
+                                    b Condition
+                                    | {{product.Condition}}
+                                span
+                                    b Price Negotiable
+                                    | {{product.PriceNegotiable}}
+                                span
+                                    b Market Price
+                                    | {{product.Currency}}. {{product.MarketPrice}}
+                                span
+                                    b Contact
+                                    | {{product.Contact}}
+                            a(class="btn btn-warning",href="#") View Detail
+            .owl-controls
+                .owl-nav
+                    div(class="owl-prev", style="") prev
+                    div(class="owl-next",style="") next
+                div(class="owl-dots",style="")
+                    div(class="owl-dot")
+                        span
+                    div(class="owl-dot")
+                        span
+
+
+<!--latest products-->

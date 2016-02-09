@@ -1,0 +1,222 @@
+extends ../includes/layout
+
+block main-content
+    //Header Begins
+    .navbar.navbar-inverse(role="navigation")#top-nav
+        .container
+            a(class="navbar-brand pull-left logo", href="/"): img(src="images/logo.png", height="18")
+            span(class="pull-right login-post")
+                a(href="/login")
+                    span(class="glyphicon glyphicon-user")
+                    |   Login
+                a(href="post-ads", class="btn btn-warning")
+                    span(class="glyphicon glyphicon-envelope")
+                    |   Post an Ads
+    //Header ends
+
+    //searchblock begins
+    div(class="search-block blackbg")
+        div(class="container")
+            div(class="row")
+                //text block
+                div(class="col-sm-3 counting clearfix")
+                    h3 Sale . Purchase . Deal
+                    span(class="pull-left") 1021 members
+                    span(class="pull-right") 100020 products
+                //searchbox
+                div(class="col-sm-7 searchbox")
+                    form(class="form-inline")
+                        div(class="input-group")
+                            input(
+                                type="text"
+                                class="form-control"
+                                placeholder="Search for products"
+                            )
+                            span(class="input-group-btn")
+                                button(
+                                    class="btn btn-warning"
+                                    type="button"
+                                ) Search
+                //social
+                div(class="col-sm-2 text-right")
+                    a(href="#", class="dropcategory") View all Categories
+                        span(class="caret")
+
+    //classified-list begins
+    div(class="blackbg drop-list collapse")
+        div(class="container")
+            //Category
+            div(class="row category")
+                div(class="col-md-2 col-sm-4")
+                    h6:img(src="images/a.png") Automotive
+                    ul(class="list-unstyled")
+                        li
+                            a(href="#") Cars, Vans &amp; Utes
+                        li
+                            a(ahref="#") Motorcycles &amp; Scooters
+                        li
+                            a(hre="#") Parts &amp; Accessories
+
+                    h6:img(src="images/b.png") Electronics
+                        ul(class="list-unstyled")
+                            li
+                                a(href="#") Computers &amp; Software (1)
+                            li
+                                a(href="#") Laptops (4)
+                            li
+                                a(href="#") Video Games &amp; Consoles (0)
+                div(class="col-md-2 col-sm-4")
+                    h6:img(src="images/c.png") Jobs
+                    ul.list-unstyled
+                        li
+                            a(href="#") Hospitality (0)
+                        li
+                            a(href="#") Construction &amp; Trades (0)
+                        li
+                            a(href="#") Sales &amp; Marketing (0)
+                        li
+                            a(href="#") Health, Sports &amp; Beauty (0)
+                        li
+                            a(href="#") Farming &amp; Veterinary (0)
+                        li
+                            a(href="#") Finance (0)
+                        li
+                            a(href="#") Gardening &amp; Landscaping (0)
+                        li
+                            a(href="#") Graphic &amp; Web Design (1)
+
+                div(class="col-md-2 col-sm-4")
+                    h6:img(src="images/a.png") Automotive
+                    ul(class="list-unstyled")
+                        li
+                            a(href="#") Cars, Vans &amp; Utes
+                        li
+                            a(ahref="#") Motorcycles &amp; Scooters
+                        li
+                            a(hre="#") Parts &amp; Accessories
+
+                    h6:img(src="images/b.png") Electronics
+                        ul(class="list-unstyled")
+                            li
+                                a(href="#") Computers &amp; Software (1)
+                            li
+                                a(href="#") Laptops (4)
+                            li
+                                a(href="#") Video Games &amp; Consoles (0)
+                div(class="col-md-2 col-sm-4")
+                    h6:img(src="images/c.png") Jobs
+                    ul.list-unstyled
+                        li
+                            a(href="#") Hospitality (0)
+                        li
+                            a(href="#") Construction &amp; Trades (0)
+                        li
+                            a(href="#") Sales &amp; Marketing (0)
+                        li
+                            a(href="#") Health, Sports &amp; Beauty (0)
+                        li
+                            a(href="#") Farming &amp; Veterinary (0)
+                        li
+                            a(href="#") Finance (0)
+                        li
+                            a(href="#") Gardening &amp; Landscaping (0)
+                        li
+                            a(href="#") Graphic &amp; Web Design (1)
+
+                div(class="col-md-2 col-sm-4")
+                    h6:img(src="images/a.png") Automotive
+                    ul(class="list-unstyled")
+                        li
+                            a(href="#") Cars, Vans &amp; Utes
+                        li
+                            a(ahref="#") Motorcycles &amp; Scooters
+                        li
+                            a(hre="#") Parts &amp; Accessories
+
+                    h6:img(src="images/b.png") Electronics
+                        ul(class="list-unstyled")
+                            li
+                                a(href="#") Computers &amp; Software (1)
+                            li
+                                a(href="#") Laptops (4)
+                            li
+                                a(href="#") Video Games &amp; Consoles (0)
+                div(class="col-md-2 col-sm-4")
+                    h6:img(src="images/c.png") Jobs
+                    ul.list-unstyled
+                        li
+                            a(href="#") Hospitality (0)
+                        li
+                            a(href="#") Construction &amp; Trades (0)
+                        li
+                            a(href="#") Sales &amp; Marketing (0)
+                        li
+                            a(href="#") Health, Sports &amp; Beauty (0)
+                        li
+                            a(href="#") Farming &amp; Veterinary (0)
+                        li
+                            a(href="#") Finance (0)
+                        li
+                            a(href="#") Gardening &amp; Landscaping (0)
+                        li
+                            a(href="#") Graphic &amp; Web Design (1)
+            //Category Ends
+    //Classified-list ends
+
+    section
+        div(ng-view)
+
+        //footer start
+        div(class="footer")
+            div(class="container")
+                div(class="row")
+                    div(class="col-sm-3")
+                        h4 Information
+                        ul(class="row list-unstyled")
+                            li(class="col-xs-6")
+                                a(href="#") About
+                            li(class="col-xs-6")
+                                a(href="#") Terms
+                            li(class="col-xs-6")
+                                a(href="#") FAQs
+                            li(class="col-xs-6")
+                                a(href="#") Affiliates
+                            li(class="col-xs-6")
+                                a(href="#") Privacy
+                            li(class="col-xs-6")
+                                a(href="#") Contact
+                    div(class="col-sm-3 newsletter")
+                        h4 Newsletter
+                        form(class="form-horizontal", role="form")
+                            input(
+                            type = "text"
+                            placeholder = "Enter Your email address"
+                            class="form-control"
+                            )
+                            button(class="btn btn-warning", type = "button") Notify Me!
+                    div(class="col-sm-3 social")
+                        h4 Follow us
+                        a(href="#")
+                            i(class="fa fa-facebook-square")
+                        a(href="#")
+                            i(class="fa fa-twitter-square")
+                        a(href="#")
+                            i(class="fa fa-pinterest-square")
+                        a(href="#")
+                            i(class="fa fa-google-plus-square")
+                    div(class="col-sm-3")
+                        h4 Contact us
+                        p
+                            b Bootstrap Classified Inc.
+                            span(class="glyphicon glyphicon-map-marker") 8290 Walk Street, Australia
+                            br
+                            span(class="glyphicon glyphicon-envelope") hello@bootstrapreal.com
+                            br
+                            span(class="glyphicon glyphicon-earphone") (123) 456-7890
+
+        div(class="copyright")
+            div(class="container")
+                | Copyright 2015. All rights reserved.
+                a(href="Nairamarket.com", class="pull-right") nairamarket.com
+        //footer ends
+
